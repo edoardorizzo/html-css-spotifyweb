@@ -45,9 +45,8 @@ body{
     height: calc(100% - 60px)
 }
 
-.debug .sidebar_bottom{
-    background-color: rgb(255, 221, 0);
-}
+
+
 
 /* upgrade */
 
@@ -58,7 +57,7 @@ body{
     position: fixed;
     left: 50px;
     padding: 0.5rem;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .secondary_btn{
@@ -72,6 +71,8 @@ body{
 
 
 /* top */
+
+/* sidebar */
 .top{
     height: calc(100vh - 70px);
     display: flex;
@@ -93,10 +94,58 @@ body{
 }
 
 .sidebar_bottom{
-    background-color: rgb(255, 221, 0);
-    height: 60px;
+    height: 50px;
 }
 
+
+.sidebar_top .spotify{
+    color: var(--white);
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar_top .home{
+    color: var(--white);
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar_top .search{
+    color: var(--grey);
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar_top .library{
+    color: var(--grey);
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.library img{
+    width: 16px;
+}
+
+.download{
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.user{
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey); 
+}
 
 
 /* content */
@@ -128,6 +177,7 @@ footer {
         
 
     .upgrade{
+        width: calc(100% - 220px);
         left: 220px;
     }
 }
