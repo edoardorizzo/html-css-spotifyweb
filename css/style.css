@@ -222,6 +222,7 @@ footer {
 
     .sidebar{
         padding: 0.5rem 1rem;
+        overflow-y: auto;
     }
 
     .sidebar_top .spotify, .home, .sidebar_top .search, .library{
@@ -257,6 +258,5 @@ footer {
 
     .playlist{
         display: block;
-        overflow-y: auto;
     }
 }
