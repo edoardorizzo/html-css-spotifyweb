@@ -6,7 +6,7 @@
 
 :root{
     --black: #000000;
-    --header-black: #080B12;
+    --header-black: #00000074;
     --bg-black: #141922;
     --plyer-grey: #282828;
     --grey: #A3A3A3;
@@ -20,6 +20,10 @@
 
 .direction_column{
     flex-direction: column;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -43,6 +47,27 @@
 
 .debug .sidebar_bottom{
     background-color: rgb(255, 221, 0);
+}
+
+/* upgrade */
+
+.upgrade{
+    height: 50px;
+    width: calc(100% - 50px);
+    background-color: var(--header-black);
+    position: fixed;
+    left: 50px;
+    padding: 0.5rem;
+    justify-content: end;
+}
+
+.secondary_btn{
+    color: white;
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: var(--header-black);
+    font-size: 10px;
 }
 
 
@@ -72,13 +97,7 @@
     height: 60px;
 }
 
-.upgrade{
-    height: 40px;
-    width: calc(100% - 50px);
-    background-color: var(--header-black);
-    position: fixed;
-    left: 50px;
-}
+
 
 /* content */
 
