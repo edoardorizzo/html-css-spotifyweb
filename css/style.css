@@ -26,6 +26,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* columns */
+
+.col_12 {
+    width: calc(100% / 12 * 12);
+}
 
 
 
@@ -214,7 +219,7 @@ body{
     margin-bottom: 1rem;
 }
 
-.card_container{
+.row{
     flex-wrap: wrap;
 }
 
@@ -331,8 +336,7 @@ footer{
     }
 }
 
-@media screen and (min-width:1024px){
-    .card_container{
-        width: calc(100 / 12 * 4);
-    }
+@media screen and (min-width: 1024px) {
+    
+    
 }
