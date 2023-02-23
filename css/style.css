@@ -31,21 +31,6 @@ body{
 
 
 
-/* debug */
-
-.debug .top{
-    background-color: var(--bg-black);
-}
-
-.debug footer{
-    background-color: var(--plyer-grey);
-}
-
-.debug .sidebar_top{
-    height: calc(100% - 60px)
-}
-
-
 
 
 /* upgrade */
@@ -75,6 +60,7 @@ body{
 /* sidebar */
 .top{
     height: calc(100vh - 70px);
+    background-color: var(--bg-black);
     display: flex;
 }
 
@@ -204,15 +190,70 @@ body{
 /* content */
 
 .content{
-    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.content_menu ul{
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.content_menu li{
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--grey);
+    list-style: none;
+    margin: 0.5rem;
+}
+
+.recently_played h2{
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.card_container{
     flex-wrap: wrap;
 }
 
+.card{
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.card_img{
+    padding: 0.5rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card_txt{
+    text-align: center;
+}
+
+.card_txt h3{
+    font-size: 12px;
+}
+
+.card_txt p{
+    font-size: 10px;
+    color: var(--grey);
+}
+
+
+
+
+
 /* footer */
 
-footer {
+footer{
     height: 70px;
-}
+    background-color: var(--plyer-grey);
+} 
 
 
 /* mediaquery */
@@ -287,5 +328,11 @@ footer {
 
     .playlist{
         display: block;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .card_container{
+        width: calc(100 / 12 * 4);
     }
 }
