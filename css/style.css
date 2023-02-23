@@ -124,6 +124,8 @@ body{
     width: 16px;
 }
 
+
+
 /* playlist */
 
 .playlist h4{
@@ -170,6 +172,13 @@ body{
     color: var(--white);
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.hr{
+    display: none;
+    border-bottom: 0.3px solid var(--grey);
+    margin: 0.75rem 0;
 }
 
 .user{
@@ -178,11 +187,16 @@ body{
     justify-content: center;
     align-items: center;
     width: 35px;
+    height: 35px;
     padding: 0.4rem;
-    margin-top: 0.5rem;
 }
 
 .label{
+    display: none;
+}
+
+.user_name{
+    color: var(--white);
     display: none;
 }
 
@@ -244,6 +258,21 @@ footer {
         display: flex;
         font-size: 10px;
         margin-left: 1rem;
+    }
+
+    .hr{
+        display: flex;
+        border-bottom: 0.3px solid var(--grey);
+        margin: 0.75rem 0;
+    }
+
+    .user_name{
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 0.75rem;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .fa-spotify{
