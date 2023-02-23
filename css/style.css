@@ -337,6 +337,15 @@ footer{
 }
 
 @media screen and (min-width: 1024px) {
+    .col_6{
+        width: calc(100% / 12 * 6);
+    }
     
+}
+
+@media screen and (min-width: 1200px) {
+    .col_4{
+        width: calc(100% / 12 * 4);
+    }
     
 }
