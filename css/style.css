@@ -228,10 +228,12 @@ body{
 .card{
     width: 50%;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .card_img{
     padding: 0.5rem;
+    position: relative;
 }
 
 .card img{
@@ -362,7 +364,7 @@ footer{
 .circle{
     height: 10px;
     width: 10px;
-    background-color: var(--lightgreen);
+    background-color: var(--lightestgray);
     border-radius: 50%;
     position: absolute;
     z-index: 2;
@@ -385,8 +387,32 @@ footer{
     color: var(--white);
 }
 
-/* mediaquery */
 
+
+/* transitions */
+
+.content_menu:hover li{
+    color: var(--white);
+}
+
+.progression_bar:hover{
+    background-color: var(--lightgreen);
+} 
+
+.progression_bar:hover .circle{
+    display: inline;
+} 
+
+.card_img:hover{
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.661));
+}
+
+.card_img:hover .play_image{
+    display:inline;
+}
+
+
+/* mediaquery */
 
 @media screen and (min-width: 768px) {
     
