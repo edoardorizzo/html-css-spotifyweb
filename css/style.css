@@ -225,7 +225,7 @@ body{
 
 .card{
     width: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .card_img{
@@ -247,6 +247,30 @@ body{
 .card_txt p{
     font-size: 10px;
     color: var(--grey);
+}
+
+.created_for h2{
+    font-size: 16px;
+}
+
+.created_for p{
+    font-size: 12px;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+.popular_artists h2{
+    font-size: 16px;
+}
+
+.popular_artists p{
+    font-size: 12px;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+.popular_artists img{
+    border-radius: 50%;
 }
 
 
