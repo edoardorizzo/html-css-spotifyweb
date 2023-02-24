@@ -402,6 +402,10 @@ i:hover{
     font-size: 20px;
 }
 
+.secondary_btn:hover{
+    font-size: 12px;
+}
+
 .create_playlist:hover .plus{
     background-color: var(--white); 
 }
