@@ -241,6 +241,7 @@ body{
 
 .card img{
     width: 100%;
+    display: block;
 }
 
 .card_img_hover{
