@@ -93,6 +93,7 @@ body{
 
 .sidebar_bottom{
     height: 80px;
+    background-color: var(--black);
 }
 
 
@@ -391,8 +392,22 @@ footer{
 
 /* transitions */
 
-.content_menu:hover li{
+li:hover {
     color: var(--white);
+}
+
+i:hover{
+    color: var(--white);
+    font-size: 20px;
+}
+
+.create_playlist:hover .plus{
+    background-color: var(--white); 
+}
+
+.create_playlist:hover .label{
+    color: var(--white);
+    font-weight: 500;
 }
 
 .progression_bar:hover{
