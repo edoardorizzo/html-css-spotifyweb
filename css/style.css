@@ -234,12 +234,30 @@ body{
 }
 
 .card_img{
-    padding: 0.5rem;
+    margin: 0.5rem;
     position: relative;
 }
 
+
 .card img{
     width: 100%;
+}
+
+.card_img_hover{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--header-black);
+    position: absolute;
+    display: none;
+}
+
+.card_img_hover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card_txt{
@@ -420,12 +438,13 @@ i:hover{
     background-color: var(--lightgreen);
 } 
 
-.progression_bar:hover .circle{
+.progress_bar:hover .circle{
     display: inline;
 } 
 
-.card_img:hover{
+.card_img:hover .card_img_hover{
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.661));
+    display: flex;
 }
 
 .card_img:hover .play_image{
